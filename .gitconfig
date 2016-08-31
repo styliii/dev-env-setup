@@ -1,0 +1,57 @@
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/Li/.gitignore
+  editor = vim
+[alias]
+  aa = add --all
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  dc = diff --cached
+  lg = log -p
+  who = shortlog -s --
+  up = pull
+  pr = pull --rebase
+  pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  switch = !legit switch \"$@\"
+  branches = !legit branches
+  sprout = !legit sprout \"$@\"
+  unpublish = !legit unpublish \"$@\"
+  harvest = !legit harvest \"$@\"
+  sync = !legit sync \"$@\"
+  publish = !legit publish \"$@\"
+  graft = !legit graft \"$@\"
+  gam = "!git commit -a -m "
+  gpr = !git pull --rebase
+[github]
+  user = Li Ouyang
+  token = 8c6ecf8ef4ebf3da31b39ee5b9b48fc2aa765f53 # https://github.com/settings/applications
+  email = li.ouyang@gmail.com
+[github "user"]
+  user = styliii
+  token = 8c6ecf8ef4ebf3da31b39ee5b9b48fc2aa765f53
+  email = li.ouyang@gmail.com
+[user]
+  name = Li Ouyang
+  email = li.ouyang@gmail.com
+[color]
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[diff "ruby"]
+  funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
+[push]
+  default = current
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+ cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+ trustExitCode = true
+[merge]
+  tool = opendiff
