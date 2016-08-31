@@ -1,20 +1,14 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/LiOuyang/.oh-my-zsh
+export ZSH=/Users/Li/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -51,23 +45,25 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx ruby rake pow git-hubfow brew zeus)
-
-source $ZSH/oh-my-zsh.sh
-
+plugins=(git osx ruby rake pow git-hubflow sublime zeus brew)
 # User configuration
 
+export PATH=$PATH:/Users/Li/workspace/lh/lendinghome-toolbelt
+export PATH="/Users/Li/workspace/lh/lendinghome-toolbelt/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='mvim'
+#   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='mvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -83,4 +79,34 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=/Users/LiOuyang/.cfg/ --work-tree=/Users/LiOuyang'
+function ws {
+  cd /Users/Li/workspace/$@
+}
+
+function code {
+  cd /Users/Li/Development/code/$@
+}
+
+# LendingHome specific
+function mono {
+  cd /Users/Li/workspace/lh/lendinghome-monolith/$@
+}
+
+function lhc {
+  cd /Users/Li/workspace/lh/lendinghome-monolith/consumer/$@
+}
+function lho {
+  cd /Users/Li/workspace/lh/lendinghome-monolith/ops/$@
+}
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export NVM_DIR=~/.nvm
+export PATH=$PATH:NVM_DIR
+source $(brew --prefix nvm)/nvm.sh
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias config='/usr/bin/git --git-dir=/Users/Li/.cfg/ --work-tree=/Users/Li'
