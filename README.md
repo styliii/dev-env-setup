@@ -18,6 +18,7 @@
 4. `config submodule update`
 3. `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 5. In Macvim `:BundleInstall`
+6. `brew install the_silver_searcher`
 
 ### Setting up oh-my-zshell
 ```
