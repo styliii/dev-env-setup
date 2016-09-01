@@ -27,11 +27,9 @@
 	gpr = !git pull --rebase
 [github]
   user = Li Ouyang
-  token = 8c6ecf8ef4ebf3da31b39ee5b9b48fc2aa765f53 # https://github.com/settings/applications
   email = li.ouyang@gmail.com
 [github "user"]
   user = styliii
-  token = 8c6ecf8ef4ebf3da31b39ee5b9b48fc2aa765f53
   email = li.ouyang@gmail.com
 [user]
 	name = Li Ouyang
