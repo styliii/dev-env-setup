@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Li/.oh-my-zsh
+export ZSH=/Users/LiOuyang/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -48,8 +48,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git osx ruby rake pow git-hubflow sublime zeus brew)
 # User configuration
 
-export PATH=$PATH:/Users/Li/workspace/lh/lendinghome-toolbelt
-export PATH="/Users/Li/workspace/lh/lendinghome-toolbelt/bin:$PATH"
+export PATH=$PATH:/Users/LiOuyang/workspace/lh/lendinghome-toolbelt
+export PATH="/Users/LiOuyang/workspace/lh/lendinghome-toolbelt/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -80,23 +80,23 @@ export EDITOR='mvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 function ws {
-  cd /Users/Li/workspace/$@
+  cd /Users/LiOuyang/workspace/$@
 }
 
 function code {
-  cd /Users/Li/Development/code/$@
+  cd /Users/LiOuyang/Development/code/$@
 }
 
 # LendingHome specific
 function mono {
-  cd /Users/Li/workspace/lh/lendinghome-monolith/$@
+  cd /Users/LiOuyang/workspace/lh/lendinghome-monolith/$@
 }
 
 function lhc {
-  cd /Users/Li/workspace/lh/lendinghome-monolith/consumer/$@
+  cd /Users/LiOuyang/workspace/lh/lendinghome-monolith/consumer/$@
 }
 function lho {
-  cd /Users/Li/workspace/lh/lendinghome-monolith/ops/$@
+  cd /Users/LiOuyang/workspace/lh/lendinghome-monolith/ops/$@
 }
 
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -109,4 +109,4 @@ source $(brew --prefix nvm)/nvm.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias config='/usr/bin/git --git-dir=/Users/Li/.cfg/ --work-tree=/Users/Li'
+alias config='/usr/bin/git --git-dir=/Users/LiOuyang/.cfg/ --work-tree=/Users/LiOuyang'
