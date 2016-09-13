@@ -1,6 +1,6 @@
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = /Users/Li/.gitignore
+	excludesfile = /Users/LiOuyang/.gitignore_global
 	editor = vim
 [alias]
   aa = add --all
@@ -33,7 +33,7 @@
   email = li.ouyang@gmail.com
 [user]
 	name = Li Ouyang
-  email = li.ouyang@gmail.com
+	email = li.ouyang@gmail.com
 [color]
   ui = true
   diff = auto
