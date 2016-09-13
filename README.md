@@ -30,6 +30,12 @@ chsh -s /bin/zsh
 ```
 brew reinstall --HEAD fzf
 /usr/local/opt/fzf/install
+
+### Key Bindings
+http://www.economyofeffort.com/2014/08/11/beyond-ctrl-remap-make-that-caps-lock-key-useful/
+```
+brew cask install karabiner
+```
 ```
 ## TODO
 - [] move this stuff into the script
