@@ -39,3 +39,5 @@ brew cask install karabiner
 ```
 ## TODO
 - [] move this stuff into the script
+- [] git should be installed first
+- [] instructions for installing brew
