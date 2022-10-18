@@ -33,9 +33,7 @@ brew reinstall fzf
 ```
 ### Key Bindings
 http://www.economyofeffort.com/2014/08/11/beyond-ctrl-remap-make-that-caps-lock-key-useful/
-```
-brew install karabiner
-```
+Download karabiner https://karabiner-elements.pqrs.org/
 
 ## TODO
 - [ ] move this stuff into the script
