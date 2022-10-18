@@ -3,6 +3,7 @@
 ### Terminal Setup
 1. Download solarized `git clone git@github.com:tomislav/osx-terminal.app-colors-solarized.git`
 2. Install via Preferences in Terminal
+3. Install Homebrew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ### Config Setup
 1. Install git if not already
@@ -38,6 +39,6 @@ brew cask install karabiner
 ```
 ```
 ## TODO
-- [] move this stuff into the script
-- [] git should be installed first
-- [] instructions for installing brew
+- [ ] move this stuff into the script
+- [ ] git should be installed first
+- [ ] instructions for installing brew
