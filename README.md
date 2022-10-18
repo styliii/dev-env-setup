@@ -23,8 +23,7 @@
 
 ### Setting up oh-my-zshell
 ```
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### FZF
